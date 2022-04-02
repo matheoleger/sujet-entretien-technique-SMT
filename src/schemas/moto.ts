@@ -9,7 +9,7 @@ export class MotorCycle {
     modelName!: string
 
     @Field()
-    makeID!: number
+    makeName!: string
 
     @Field()
     CategoryName!: string
@@ -18,14 +18,29 @@ export class MotorCycle {
     year!: string
 }  
 
-@ObjectType()
-export class Maker {
+@InputType()
+export class MotorCycleInput implements Partial<MotorCycle> {
     @Field()
-    id!: number
+    modelName!: string
+
+    @Field()
+    makeName!: string
+
+    @Field()
+    CategoryName!: string
 
     @Field()
     year!: string
+}
 
-    @Field()
-    location!: string
-} 
+
+//Default data
+export const motorCycles = [
+    {
+        id: 0,
+        modelName: "Cruiser Softail Standard",
+        makeName: "Harley Davidson",
+        CategoryName: "Cruiser",
+        year: "2022"
+    },
+]

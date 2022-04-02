@@ -6,9 +6,20 @@
 type MotorCycle {
   CategoryName: String!
   id: Float!
-  makeID: Float!
+  makeName: String!
   modelName: String!
   year: String!
+}
+
+input MotorCycleInput {
+  CategoryName: String!
+  makeName: String!
+  modelName: String!
+  year: String!
+}
+
+type Mutation {
+  addMotorCycle(motorCycleInput: MotorCycleInput!): MotorCycle!
 }
 
 type Query {

@@ -1,0 +1,8 @@
+{
+  "name": "sujet-entretien-technique-SMT",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/matheoleger/sujet-entretien-technique-SMT.git",
+  "author": "matheoleger <71370253+matheoleger@users.noreply.github.com>",
+  "license": "MIT"
+}
